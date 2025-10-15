@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/13 18:36:41 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/15 15:42:10 by tkenji-u         ###   ########.fr       */
+/*   Created: 2025/10/15 15:26:01 by tkenji-u          #+#    #+#             */
+/*   Updated: 2025/10/15 18:27:30 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#include "push_swap.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-
-int	ft_atoi(const char *nptr);
-int main(int argc, char **argv);
-
-#endif
+char **parse_input(int argc, char **argv)
+{
+	
+}
