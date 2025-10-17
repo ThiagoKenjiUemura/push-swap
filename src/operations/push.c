@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/15 15:22:31 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/10/17 13:32:17 by tkenji-u         ###   ########.fr       */
+/*   Created: 2025/10/17 18:47:05 by tkenji-u          #+#    #+#             */
+/*   Updated: 2025/10/17 19:06:42 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int main(int argc, char **argv)
+void	pa(t_stack **a, t_stack **b)
 {
-	t_stack *stack_a;
-    t_stack *stack_b;
+	if(!a || !b)
+		return ;
 	
-	if (argc < 2)
-		return (0);
-	stack_a = initialize_stack(argc, argv);
-	if(!stack_a)
-		return(1);
-	stack_b = NULL;
-	free_stack(&stack_a);
 }
