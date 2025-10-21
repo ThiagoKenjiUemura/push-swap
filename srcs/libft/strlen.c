@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   strlen.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
+/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/15 15:22:31 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/10/17 13:32:17 by tkenji-u         ###   ########.fr       */
+/*   Created: 2025/10/21 20:19:36 by thiagouemur       #+#    #+#             */
+/*   Updated: 2025/10/21 20:27:55 by thiagouemur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int main(int argc, char **argv)
+size_t	strlen(const char *s)
 {
-	t_stack *stack_a;
-    t_stack *stack_b;
-	
-	if (argc < 2)
-		return (0);
-	stack_a = initialize_stack(argc, argv);
-	if(!stack_a)
-		return(1);
-	stack_b = NULL;
-	free_stack(&stack_a);
+	const char	*p;
+
+	p = s;
+	while (*p)
+		p++;
+	return (p - s);
 }

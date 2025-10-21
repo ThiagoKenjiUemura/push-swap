@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push.c                                             :+:      :+:    :+:   */
+/*   memset.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
+/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/17 18:47:05 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/10/17 19:06:42 by tkenji-u         ###   ########.fr       */
+/*   Created: 2025/10/21 20:19:15 by thiagouemur       #+#    #+#             */
+/*   Updated: 2025/10/21 20:27:37 by thiagouemur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	pa(t_stack **a, t_stack **b)
+void	*memset(void *s, int c, size_t n)
 {
-	if(!a || !b)
-		return ;
-	
+	unsigned char	*p;
+
+	p = (unsigned char *)s;
+	while (n--)
+		*p++ = (unsigned char)c;
+	return (s);
 }

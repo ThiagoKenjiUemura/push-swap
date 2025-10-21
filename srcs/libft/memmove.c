@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   list_utils2.c                                      :+:      :+:    :+:   */
+/*   memmove.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
+/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/17 16:50:07 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/10/17 17:11:32 by tkenji-u         ###   ########.fr       */
+/*   Created: 2025/10/21 20:19:09 by thiagouemur       #+#    #+#             */
+/*   Updated: 2025/10/21 20:27:34 by thiagouemur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	free_stack(t_stack **stack)
+void	*memmove(void *dest, const void *src, size_t n)
 {
-	t_stack	*current_node;
-	t_stack	*next_node;
-
-	if (!stack || !*stack)
-		error_exit();
-	current_node = *stack;
-	while (current_node != NULL)
+	if (dest > src)
 	{
-		next_node = current_node -> next;
-		free(current_node);
-		current_node = next_node;
+		while (n--)
+			((unsigned char *)dest)[n] = ((unsigned const char *)src)[n];
 	}
-	*stack = NULL;
+	else
+		memcpy(dest, src, n);
+	return (dest);
 }
