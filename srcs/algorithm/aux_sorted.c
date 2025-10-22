@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   aux_sorted.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 20:17:47 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:17:48 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/10/22 09:56:33 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,6 @@ void	sorted_pa(t_list **a, t_list **b)
 			pa(a, b);
 	}
 }
-
 
 int	index_max(t_list **a)
 {

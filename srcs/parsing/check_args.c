@@ -6,7 +6,7 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 13:52:41 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/10/22 09:50:38 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/10/22 09:53:43 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,4 +87,3 @@ int	input(int argc, char **argv, t_list **a)
 	}
 	return (total_size);
 }
-

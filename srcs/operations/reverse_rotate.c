@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   reverse_rotate.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:10:32 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:39:26 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/10/22 09:55:55 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static void	rev_r(t_list **stack)
 {
 	t_list	*last_node;
 	t_list	*prev;
-	
+
 	if (!stack || !*stack || !(*stack)->next)
 		return ;
 	last_node = *stack;

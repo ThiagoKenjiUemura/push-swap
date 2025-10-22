@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rotate.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:11:02 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 22:03:10 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/10/22 09:55:41 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ static void	r(t_list **stack)
 {
 	t_list	*first_node;
 	t_list	*last_node;
-	
-	if(!stack || !*stack || !(*stack)->next)
+
+	if (!stack || !*stack || !(*stack)->next)
 		return ;
 	first_node = *stack;
 	last_node = *stack;
@@ -40,7 +40,7 @@ void	rb(t_list **b)
 	write(1, "rb\n", 3);
 }
 
-void    rr(t_list **a, t_list **b)
+void	rr(t_list **a, t_list **b)
 {
 	r(a);
 	r(b);

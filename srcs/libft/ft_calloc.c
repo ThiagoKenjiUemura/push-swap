@@ -6,7 +6,7 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 20:18:45 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/22 09:44:36 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/10/22 09:58:04 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	p = malloc(nmemb * size);
 	if (!p)
 		return (NULL);
-	bzero(p, nmemb * size);
+	ft_bzero(p, nmemb * size);
 	return (p);
 }

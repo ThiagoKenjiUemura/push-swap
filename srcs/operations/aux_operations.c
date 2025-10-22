@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   aux_operations.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 20:17:57 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:17:58 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/10/22 09:56:07 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,3 @@ int	n_max(t_list **a)
 	}
 	return (max);
 }
-

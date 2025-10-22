@@ -6,7 +6,7 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:36:41 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/22 09:47:14 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/10/22 09:54:02 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	rrb(t_list **b);
 void	rrr(t_list **a, t_list **b);
 void	ra(t_list **a);
 void	rb(t_list **b);
-void    rr(t_list **a, t_list **b);
+void	rr(t_list **a, t_list **b);
 void	sa(t_list **a);
 void	sb(t_list **b);
 void	ss(t_list **a, t_list **b);
