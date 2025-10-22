@@ -6,7 +6,7 @@
 /*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:36:41 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:32:20 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/10/21 22:03:31 by thiagouemur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ typedef struct s_list
 void	error_exit(void);
 int		input(int argc, char **argv, t_list **a);
 int		input_number(const char *str);
-void	check_rep(t_list **a);
 int		fill_stack_args(char **args, t_list **a);
 
 /* Operations */

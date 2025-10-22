@@ -6,7 +6,7 @@
 /*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:11:02 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:38:51 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/10/21 22:03:10 by thiagouemur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static void	r(t_list **stack)
 		last_node = last_node->next;
 	*stack = first_node->next;
 	first_node->next = NULL;
-	first_node->next = first_node;
+	last_node->next = first_node;
 }
 
 void	ra(t_list **a)

@@ -6,7 +6,7 @@
 /*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:22:31 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/10/21 20:07:29 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/10/21 22:04:07 by thiagouemur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	is_sorted(t_list **a)
 	return (1);
 }
 
-void	check_rep(t_list **a)
+static void	check_rep(t_list **a)
 {
 	t_list	*tmp1;
 	t_list	*tmp2;
