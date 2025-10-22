@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   substr.c                                           :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 20:19:45 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:27:59 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/10/22 09:51:17 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-char	*substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	slen;
 	char	*sub;
 
 	if (!s)
 		return (NULL);
-	slen = strlen(s);
+	slen = ft_strlen(s);
 	if (start >= slen)
-		return (strdup(""));
+		return (ft_strdup(""));
 	if (len > slen - start)
 		len = slen - start;
 	sub = malloc(len + 1);
 	if (!sub)
 		return (NULL);
-	strlcpy(sub, s + start, len + 1);
+	ft_strlcpy(sub, s + start, len + 1);
 	return (sub);
 }

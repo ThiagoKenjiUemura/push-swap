@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memcpy.c                                           :+:      :+:    :+:   */
+/*   isdigit.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/21 20:19:04 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:27:31 by thiagouemur      ###   ########.fr       */
+/*   Created: 2025/10/21 20:18:53 by thiagouemur       #+#    #+#             */
+/*   Updated: 2025/10/22 09:48:14 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	*memcpy(void *dest, const void *src, size_t n)
+int	ft_isdigit(int c)
 {
-	unsigned char		*pdest;
-	const unsigned char	*psrc;
-
-	if (!dest && !src)
-		return (NULL);
-	pdest = (unsigned char *)dest;
-	psrc = (const unsigned char *)src;
-	while (n--)
-		*pdest++ = *psrc++;
-	return (dest);
+	return (c >= '0' && c <= '9');
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   check_args.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 13:52:41 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/10/21 20:08:48 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/10/22 09:50:38 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ int	input_number(const char *str)
 	i = 0;
 	if (str[i] == '+' || str[i] == '-')
 		i++;
-	if (!isdigit(str[i]))
+	if (!ft_isdigit(str[i]))
 		error_exit();
 	while (str[i])
 	{
-		if (!isdigit(str[i]))
+		if (!ft_isdigit(str[i]))
 			error_exit();
 		i++;
 	}
@@ -75,7 +75,7 @@ int	input(int argc, char **argv, t_list **a)
 	total_size = 0;
 	while (i < argc)
 	{
-		split_args = split(argv[i], ' ');
+		split_args = ft_split(argv[i], ' ');
 		if (!split_args || !*split_args)
 		{
 			free_split(split_args);

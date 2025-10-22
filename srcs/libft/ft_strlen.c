@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memmove.c                                          :+:      :+:    :+:   */
+/*   strlen.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/21 20:19:09 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:27:34 by thiagouemur      ###   ########.fr       */
+/*   Created: 2025/10/21 20:19:36 by thiagouemur       #+#    #+#             */
+/*   Updated: 2025/10/22 09:47:30 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	*memmove(void *dest, const void *src, size_t n)
+size_t	ft_strlen(const char *s)
 {
-	if (dest > src)
-	{
-		while (n--)
-			((unsigned char *)dest)[n] = ((unsigned const char *)src)[n];
-	}
-	else
-		memcpy(dest, src, n);
-	return (dest);
+	const char	*p;
+
+	p = s;
+	while (*p)
+		p++;
+	return (p - s);
 }

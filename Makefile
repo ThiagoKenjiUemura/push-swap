@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+         #
+#    By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/13 18:42:53 by thiagouemur       #+#    #+#              #
-#    Updated: 2025/10/21 20:37:59 by thiagouemur      ###   ########.fr        #
+#    Updated: 2025/10/22 09:46:29 by tkenji-u         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,18 +21,18 @@ VPATH = srcs srcs/parsing srcs/libft srcs/operations srcs/algorithm
 SRCS =	srcs/main.c \
        srcs/parsing/check_args.c \
        srcs/libft/list_utils.c \
-	   srcs/libft/atol.c \
-	   srcs/libft/bzero.c \
-	   srcs/libft/calloc.c \
-	   srcs/libft/isdigit.c \
-	   srcs/libft/memcpy.c \
-	   srcs/libft/memmove.c \
-	   srcs/libft/memset.c \
-	   srcs/libft/split.c \
-	   srcs/libft/strdup.c \
-	   srcs/libft/strlcpy.c \
-	   srcs/libft/strlen.c \
-	   srcs/libft/substr.c \
+	   srcs/libft/ft_atol.c \
+	   srcs/libft/ft_bzero.c \
+	   srcs/libft/ft_calloc.c \
+	   srcs/libft/ft_isdigit.c \
+	   srcs/libft/ft_memcpy.c \
+	   srcs/libft/ft_memmove.c \
+	   srcs/libft/ft_memset.c \
+	   srcs/libft/ft_split.c \
+	   srcs/libft/ft_strdup.c \
+	   srcs/libft/ft_strlcpy.c \
+	   srcs/libft/ft_strlen.c \
+	   srcs/libft/ft_substr.c \
 	   srcs/operations/aux_operations.c \
        srcs/operations/swap.c \
        srcs/operations/push.c \

@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   calloc.c                                           :+:      :+:    :+:   */
+/*   memset.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/21 20:18:45 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:27:23 by thiagouemur      ###   ########.fr       */
+/*   Created: 2025/10/21 20:19:15 by thiagouemur       #+#    #+#             */
+/*   Updated: 2025/10/22 09:48:38 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	*calloc(size_t nmemb, size_t size)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	void	*p;
+	unsigned char	*p;
 
-	if (nmemb == 0 || size == 0)
-		return (malloc(1));
-	if (nmemb && size && nmemb != (nmemb * size / size))
-		return (NULL);
-	p = malloc(nmemb * size);
-	if (!p)
-		return (NULL);
-	bzero(p, nmemb * size);
-	return (p);
+	p = (unsigned char *)s;
+	while (n--)
+		*p++ = (unsigned char)c;
+	return (s);
 }

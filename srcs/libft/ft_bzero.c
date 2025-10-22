@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strlen.c                                           :+:      :+:    :+:   */
+/*   bzero.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/21 20:19:36 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:27:55 by thiagouemur      ###   ########.fr       */
+/*   Created: 2025/10/21 20:18:18 by thiagouemur       #+#    #+#             */
+/*   Updated: 2025/10/22 09:48:05 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-size_t	strlen(const char *s)
+void	ft_bzero(void *s, size_t n)
 {
-	const char	*p;
-
-	p = s;
-	while (*p)
-		p++;
-	return (p - s);
+	memset(s, '\0', n);
 }

@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memset.c                                           :+:      :+:    :+:   */
+/*   memcpy.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/21 20:19:15 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:27:37 by thiagouemur      ###   ########.fr       */
+/*   Created: 2025/10/21 20:19:04 by thiagouemur       #+#    #+#             */
+/*   Updated: 2025/10/22 09:48:25 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	*memset(void *s, int c, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char	*p;
+	unsigned char		*pdest;
+	const unsigned char	*psrc;
 
-	p = (unsigned char *)s;
+	if (!dest && !src)
+		return (NULL);
+	pdest = (unsigned char *)dest;
+	psrc = (const unsigned char *)src;
 	while (n--)
-		*p++ = (unsigned char)c;
-	return (s);
+		*pdest++ = *psrc++;
+	return (dest);
 }

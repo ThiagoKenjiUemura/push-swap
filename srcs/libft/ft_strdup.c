@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bzero.c                                            :+:      :+:    :+:   */
+/*   strdup.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/21 20:18:18 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:27:19 by thiagouemur      ###   ########.fr       */
+/*   Created: 2025/10/21 20:19:26 by thiagouemur       #+#    #+#             */
+/*   Updated: 2025/10/22 09:45:29 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	bzero(void *s, size_t n)
+char	*ft_strdup(const char *s)
 {
-	memset(s, '\0', n);
+	size_t	len;
+	char	*dup;
+
+	len = ft_strlen(s) + 1;
+	dup = ft_calloc(len, 1);
+	if (!dup)
+		return (NULL);
+	ft_strlcpy(dup, s, len);
+	return (dup);
 }

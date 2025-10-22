@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 18:36:41 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 22:03:31 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/10/22 09:47:14 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,17 +68,17 @@ int		n_min(t_list **a);
 int		n_max(t_list **a);
 
 /* libft */
-long	atol(const char *nptr);
-void	bzero(void *s, size_t n);
-void	*calloc(size_t nmemb, size_t size);
-int		isdigit(int c);
-void	*memcpy(void *dest, const void *src, size_t n);
-void	*memmove(void *dest, const void *src, size_t n);
-void	*memset(void *s, int c, size_t n);
-char	**split(char const *s, char c);
-char	*strdup(const char *s);
-size_t	strlcpy(char *dst, const char *src, size_t size);
-size_t	strlen(const char *s);
-char	*substr(char const *s, unsigned int start, size_t len);
+long	ft_atol(const char *nptr);
+void	ft_bzero(void *s, size_t n);
+void	*ft_calloc(size_t nmemb, size_t size);
+int		ft_isdigit(int c);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_memset(void *s, int c, size_t n);
+char	**ft_split(char const *s, char c);
+char	*ft_strdup(const char *s);
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+size_t	ft_strlen(const char *s);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif

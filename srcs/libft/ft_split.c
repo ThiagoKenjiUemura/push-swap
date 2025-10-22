@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   split.c                                            :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 20:19:20 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:27:42 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/10/22 09:51:06 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,11 +43,11 @@ static char	*get_next_word(char const **s, char c)
 	while (**s && **s != c)
 		(*s)++;
 	len = *s - start;
-	word = substr(start, 0, len);
+	word = ft_substr(start, 0, len);
 	return (word);
 }
 
-char	**split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**result;
 	int		word_count;
@@ -56,7 +56,7 @@ char	**split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	word_count = count_words(s, c);
-	result = (char **)calloc(word_count + 1, sizeof(char *));
+	result = (char **)ft_calloc(word_count + 1, sizeof(char *));
 	if (!result)
 		return (NULL);
 	i = 0;

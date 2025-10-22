@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strdup.c                                           :+:      :+:    :+:   */
+/*   strlcpy.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
+/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/21 20:19:26 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/10/21 20:27:45 by thiagouemur      ###   ########.fr       */
+/*   Created: 2025/10/21 20:19:31 by thiagouemur       #+#    #+#             */
+/*   Updated: 2025/10/22 09:47:25 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-char	*strdup(const char *s)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	len;
-	char	*dup;
 
-	len = strlen(s) + 1;
-	dup = calloc(len, 1);
-	if (!dup)
-		return (NULL);
-	strlcpy(dup, s, len);
-	return (dup);
+	len = ft_strlen(src);
+	if (size == 0)
+		return (len);
+	while (*src && size > 1)
+	{
+		*dst++ = *src++;
+		size--;
+	}
+	*dst = '\0';
+	return (len);
 }
